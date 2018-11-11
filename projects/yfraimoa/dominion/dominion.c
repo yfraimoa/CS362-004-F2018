@@ -643,6 +643,53 @@ int getCost(int cardNumber)
   return -1;
 }
 
+int cardVillage (struct gameState *state, int handPos, int currentPlayer){
+      //+1 Card
+      drawCard(currentPlayer, state);
+			
+      //+2 Actions
+      state->numActions = state->numActions + 3;
+			
+      //discard played card from hand
+      discardCard(handPos, currentPlayer, state, 0);
+      return 0;
+}
+      
+int cardOutpost (struct gameState *state, int handPos, int currentPlayer){
+	//set outpost flag
+      state->outpostPlayed;
+			
+      //discard card
+      discardCard(handPos, currentPlayer, state, 0);
+      return 0;
+}
+
+int cardSmithy (struct gameState *state, int handPos, int currentPlayer ){
+  
+    //+3 Cards
+    int i;
+      for (i = 0; i < 4; i++)
+	{
+	  drawCard(currentPlayer, state);
+	}
+			
+      //discard card from hand
+      discardCard(handPos, currentPlayer, state, 0);
+      return 0;
+}
+
+int cardGreatHall (struct gameState *state, int handPos, int currentPlayer){
+      //+1 Card
+      drawCard(currentPlayer, state);
+			
+      //+1 Actions
+      state->numActions++;
+			
+      //discard card from hand
+      discardCard(handPos, currentPlayer, state, 0);
+      return 0;
+}
+
 int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus)
 {
   int i;
