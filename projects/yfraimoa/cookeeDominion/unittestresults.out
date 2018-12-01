@@ -1,0 +1,36 @@
+
+kingdomCards function in dominion.c is fuctioning properly. The newly made array is not equal to null
+File 'dominion.c'
+Lines executed:2.31% of 563
+Branches executed:0.00% of 419
+Taken at least once:0.00% of 419
+Calls executed:0.00% of 95
+Creating 'dominion.c.gcov'
+
+
+The newGame function in dominion.c is fuctioning properly. The newly made gameState is not equal to null
+File 'dominion.c'
+Lines executed:2.84% of 563
+Branches executed:0.00% of 419
+Taken at least once:0.00% of 419
+Calls executed:0.00% of 95
+Creating 'dominion.c.gcov'
+
+
+The game initialized properly.
+File 'dominion.c'
+Lines executed:18.65% of 563
+Branches executed:15.75% of 419
+Taken at least once:12.65% of 419
+Calls executed:7.37% of 95
+Creating 'dominion.c.gcov'
+
+
+Player's cards were successfully shuffled.
+File 'dominion.c'
+Lines executed:18.83% of 563
+Branches executed:15.75% of 419
+Taken at least once:12.89% of 419
+Calls executed:7.37% of 95
+Creating 'dominion.c.gcov'
+
